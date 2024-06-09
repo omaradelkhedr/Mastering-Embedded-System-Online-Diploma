@@ -29,6 +29,7 @@ int main (void)
 	 }
 	 /* Insert the element in the required location*/
 	 arr[location] = element;
+	 /* Print the result*/
 	 for (iter=0;iter<n+1;iter++)
 	 {
 		 printf("%d ",arr[iter]);
