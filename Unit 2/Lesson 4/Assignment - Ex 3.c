@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-/* Write a C Program to find Transpose of a matrix*/
+/* Ex 3: Write a C Program to find Transpose of a matrix*/
 int main (void)
 {
 	/* Arrays to store the matrix and its transpose*/
