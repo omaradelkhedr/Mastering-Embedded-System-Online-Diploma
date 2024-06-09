@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-/* Ex 2: Calculate the length of a string manually*/
+/* Ex 7: Calculate the length of a string manually*/
 int main (void)
 {
 	/* Define a string*/

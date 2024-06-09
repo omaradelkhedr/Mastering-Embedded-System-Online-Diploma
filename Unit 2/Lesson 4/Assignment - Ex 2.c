@@ -1,21 +1,29 @@
 #include "stdio.h"
 
-/* Ex 2: Calculate the length of a string manually*/
+/* Ex 2: Write a C Program to average using arrays*/
 int main (void)
 {
-	/* Define a string*/
-	unsigned char text[30];
-	/* Request a string from the user*/
-	printf("Please enter any text: ");
-	gets(text);
-	/* A loop to count characters of a string*/
-	unsigned char count;
-	while (text[count])
+	/* Define number of elements entered by the user*/
+	unsigned char n;
+	float arr[255];
+	/* Request to enter the number of elements n*/
+	printf("Please enter the number of elements: ");
+	scanf("%d",&n);
+	/* Loop to store the elements*/
+	unsigned char iter;
+	for (iter =0 ; iter < n ; iter ++)
 	{
-		/* counter will keep counting until it reaches null character which is a value 0 -> that terminates the loop*/
-		count++;
+		/* Request to enter the elements*/
+		printf("Please enter number: ");
+		scanf("%f",&arr[iter]);
 	}
-	/* Print the result*/
-	printf("Number of characters in the previous text is : %d",count);
+	/* Loop to calculate sum & average*/
+	for (iter =1 ; iter <n ; iter++)
+	{
+		/* Accumulate the sum in element [0]*/
+		arr[0] = arr[0] + arr[iter];
+	}
+	/* Average = Sum/n */
+	printf("Average is : %f\n", arr[0]/n);
 	return 0;
 }
