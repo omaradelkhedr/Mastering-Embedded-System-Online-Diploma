@@ -16,6 +16,7 @@ int main(void)
 	return 0;
 }
 
+/* Function definition*/
 unsigned int fact (unsigned int n)
 {
 	/* Variable to store the iterator and the value entered by the user and result of the factorial*/
